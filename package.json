@@ -1,0 +1,14 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "Tests for my code challenges",
+  "main": "source/App.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/apptest.js"
+  },
+  "author": "Solomon-enenche",
+  "license": "ISC"
+}
