@@ -1,6 +1,6 @@
 module.exports={
 
-  ArithGeo:(arr)=>{ 
+  aritGeo:(arr)=>{ 
 if(arr.length===0)
   return 0;
 if(arr.length<=2)
