@@ -10,5 +10,9 @@
     "test": "mocha test/apptest.js"
   },
   "author": "Solomon-enenche",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
 }
