@@ -1,26 +1,33 @@
 module.exports={
-  aritGeo:(A)=>{
-  var arit=0;
-  var geo=0;
-  
-  if(A==[]){
-    return 0;
-  }else if(A.length<=2){
-      return undefined;
-  }else{
-      for (var i=0;i<A.length-2;i+=1){
-        if (A[i+1]-A[i]===A[i+2]-A[i+1]){
-          arit+=1;
-        }else if (A[i+1]/A[i]===A[i+2]/A[i+1]){
-          geo+=1;
-        }else return -1;
-      }
+
+  ArithGeo:(arr)=>{ 
+if(arr.length===0)
+  return 0;
+if(arr.length<=2)
+  return undefined;
+var cmDiff = arr[1] - arr[0];
+var cmRatio = arr[1] / arr[0];
+
+var arith = true;
+var geo = true;
+
+for(var i = 0; i < arr.length - 1; i++)
+{
+    if( arr[i + 1] - arr[i] !== cmDiff )
+      arith = false;
+    if(arr[i + 1] /arr[i] !== cmRatio)
+      geo = false;
+}
+
+if(arith === true)
+    return "arithmetic";
+else if(geo === true)
+    return" geometric";
+else
+    return -1;
+
   }
-     
-     if(arit==A.length-1){
-       return "isArithmetic";
-     }else if (geo==A.length-1){
-       return "isGeometric";
-     }
+
 }
-}
+
+

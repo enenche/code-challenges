@@ -1,5 +1,5 @@
-const assert=require('chai').assert;
-const myFun=require('../source/App');
+import {assert} from 'chai';
+const myFun=require('../source/App'); //need to find an import statement
 
 describe('aritGeo', function(){
 	describe('Normal required input', function(){
